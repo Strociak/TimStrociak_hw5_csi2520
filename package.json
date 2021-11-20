@@ -1,0 +1,24 @@
+{
+  "name": "timstrociak_hw5_csi2520",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Strociak/TimStrociak_hw5_csi2520.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Strociak/TimStrociak_hw5_csi2520/issues"
+  },
+  "homepage": "https://github.com/Strociak/TimStrociak_hw5_csi2520#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
