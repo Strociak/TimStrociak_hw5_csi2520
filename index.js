@@ -1,5 +1,5 @@
 const express = require("express");
-const mysql = require("mysql");
+
 const ejs = require("ejs");
 
 // Create express app
@@ -33,6 +33,18 @@ app.use("/public", express.static(__dirname + "/public"));
 // routes
 app.get("/", (req, res) => {
   res.render("index");
+});
+
+app.get('/resume', function(req, res) {
+  res.render('../views/resume.ejs');
+});
+
+app.get('/fun_facts', function(req, res) {
+  res.render('../views/fun_facts.ejs');
+});
+
+app.get('/blog', function(req, res) {
+  res.render('../views/blog.ejs');
 });
 
 // app.post("/insertstudents", (req, res) => {
@@ -75,6 +87,10 @@ app.get("/", (req, res) => {
 //     res.render("readData", { data: result });
 //   });
 // });
+
+
+
+
 
 // Setup server ports
 const PORT = process.env.PORT || 3000;
