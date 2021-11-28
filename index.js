@@ -47,6 +47,10 @@ app.get('/blog', function(req, res) {
   res.render('../views/blog.ejs');
 });
 
+app.get('/trivia', function(req, res) {
+  res.render('../views/trivia.ejs');
+});
+
 // app.post("/insertstudents", (req, res) => {
 //   let data = { name: req.body.studentName, email: req.body.studentEmail };
 //   let sql = `INSERT INTO students SET ?`;
